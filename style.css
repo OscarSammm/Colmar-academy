@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100px;
+    width: 100%;
+    background-image: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
