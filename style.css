@@ -6,9 +6,18 @@
 .header{
     min-height: 100px;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
-    padding: 20em;
+    padding-bottom: 35em;
+}
+
+.nav{
+    min-height: 50px;
+    text-align: right;
+    display: flex;
+    padding: 7%;
+    justify-content: space-between;
+    align-items: center;
 }
