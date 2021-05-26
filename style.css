@@ -10,14 +10,29 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-bottom: 35em;
+    padding-bottom: 39em;
 }
 
 .nav{
-    min-height: 50px;
-    text-align: right;
     display: flex;
     padding: 7%;
     justify-content: space-between;
     align-items: center;
 }
+
+nav img{
+    width: 150px
+}
+
+nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
