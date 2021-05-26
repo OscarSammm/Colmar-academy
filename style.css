@@ -45,12 +45,18 @@ nav-links{
 
 .nav-links ul li::after{
     content: '';
-    width: 50px;
+    width: 0%;
     height: 3px;
     background: red;
-    display:flex;
+    display: flex;
     margin: auto;
+    transition: 0.5s;
 }
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
 
 
 
