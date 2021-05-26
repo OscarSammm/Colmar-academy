@@ -43,5 +43,14 @@ nav-links{
     font-size: 13px;
 }
 
+.nav-links ul li::after{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: red;
+    display:flex;
+    margin: auto;
+}
+
 
 
