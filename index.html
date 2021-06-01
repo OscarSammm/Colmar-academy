@@ -10,166 +10,232 @@
       rel="stylesheet"
     />
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
       src="https://kit.fontawesome.com/e215c300a0.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function () {
+        //run when the DOM is ready
+        $("#closebutton").click(function () {
+          console.log("close");
+          $(".nav-links").removeClass("active"); //add the class to the clicked element
+          $("#openbutton").removeClass("hidden");
+        });
+
+        $("#openbutton").click(function () {
+          console.log("open");
+          $(".nav-links").addClass("active"); //add the class to the clicked element
+          $("#openbutton").addClass("hidden");
+        });
+      });
+    </script>
   </head>
   <body>
-  <section class="header">
-    <nav>
-      <div class="backgroundImage">
-      <a href="index.html"><img src="images/logo.png" /></a>
-      <div class="nav-links" id="navLinks">
-         <i class="navigation far fa-window-close" id="closebutton"></i>
-          <ul>
+    <section class="header">
+      <nav>
+        <div class="backgroundImage">
+          <a href="index.html"><img src="images/logo.png" /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="navigation far fa-window-close" id="closebutton"></i>
+            <ul>
               <li><a href="">HOME</a></li>
-              <li><a href="">ON CAMPUS</a></li>
+              <li><a href="">ABOUT</a></li>
               <li><a href="">ONLINE</a></li>
               <li><a href="">OUR COMPANIES</a></li>
               <li><a href="">SIGN IN</a></li>
-          </ul>
+            </ul>
+          </div>
+          <i class="navigation fas fa-bars" id="openbutton"></i>
         </div>
-        <i class="navigation fas fa-bars" id="openbutton"></i>
-    </nav>
-<div class="text-box">
-    <h1>World's Biggest University</h1>
-    <p> Making website is one of the easiest things to do now, you just have to lear HTML, CSS,<br/> JAVASCRIPT and you are good to go!</p>
-    <a href="" class="hero-btn">Visit Us To Know More</a>
-</div>
-</section>
+      </nav>
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Making website is one of the easiest things to do now, you just have
+          to lear HTML, CSS,<br />
+          JAVASCRIPT and you are good to go!
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
 
-<!------ Course ------>
+    <!------ Course ------>
 
-<section class="Course">
-    <h1>Courses We Offer</h1>
-    <p>Javascripts, Css and HTML are the courses we offer to learn and create your new website.</p>
-    
-    <div class="row">
-      <div class="course-col">
+    <section class="Course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Javascripts, Css and HTML are the courses we offer to learn and create
+        your new website.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
           <h3>Intermediate</h3>
-          <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd.</p>
-      </div>
-      <div class="course-col">
+          <p>
+            bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub
+            fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu
+            dbdjvbhxhjlbd.
+          </p>
+        </div>
+        <div class="course-col">
           <h3>Degree</h3>
-          <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd.</p>
-      </div>
-      <div class="course-col">
+          <p>
+            bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub
+            fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu
+            dbdjvbhxhjlbd.
+          </p>
+        </div>
+        <div class="course-col">
           <h3>Post Graduation</h3>
-          <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd.</p>
+          <p>
+            bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub
+            fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu
+            dbdjvbhxhjlbd.
+          </p>
+        </div>
       </div>
-    </div>
-    
-</section>
+    </section>
 
-<!------campus------>
+    <!------campus------>
 
-<section class="campus">
-  <h1>Our Global Campus</h1>
-  <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd.</p>
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>
+        bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb
+        hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu
+        dbdjvbhxhjlbd.
+      </p>
 
-  <div class="row">
-    <div class="campus-col">
-      <img src="images/london.png">
-      <div class="layer">
-        <h3>LONDON</h3>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/london.png" />
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png" />
+          <div class="layer">
+            <h3>NEW YORK</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/washington.png" />
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="campus-col">
-      <img src="images/newyork.png">
-      <div class="layer">
-        <h3>NEW YORK</h3>
+    </section>
+
+    <!------Facilities------>
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb
+        hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu
+        dbdjvbhxhjlbd.
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" />
+          <h3>World Class Library</h3>
+          <p>
+            bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub
+            fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png" />
+          <h3>Largest Play Ground</h3>
+          <p>
+            bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub
+            fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>
+            bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub
+            fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="campus-col">
-      <img src="images/washington.png">
-      <div class="layer">
-        <h3>WASHINGTON</h3>
+    </section>
+
+    <!------ testimonials ------>
+
+    <section class="testimonials">
+      <h1>What our Students Says</h1>
+      <p>
+        bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb
+        hidbiu vbiu dbdjvbhxhjlbddsib biufb.
+      </p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/karla.jpg" />
+          <div>
+            <p>
+              bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub
+              fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.
+            </p>
+            <h3>Karla Lesage</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="images/dan.jpg" />
+          <div>
+            <p>UUUUUUUU how would that movie be.</p>
+            <h3>Daniel Lesage</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-</section>
+    <!------ Call to Action-->
 
-<!------Facilities------>
+    <section class="cta">
+      <h1>
+        Enroll for our various online courses<br />Anywhere from the world
+      </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
 
-<section class="facilities">
-  <h1>Our Facilities</h1>
-  <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd.</p>
+    <!------ Footer ----->
 
-  <div class="row">
-    <div class="facilities-col">
-      <img src="images/library.png">
-      <h3>World Class Library</h3>
-      <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.</p>
-    </div>
-    <div class="facilities-col">
-      <img src="images/basketball.png">
-      <h3>Largest Play Ground</h3>
-      <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.</p>
-    </div>
-    <div class="facilities-col">
-      <img src="images/cafeteria.png">
-      <h3>Tasty and Healthy Food</h3>
-      <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.</p>
-    </div>
-  </div>
-
-</section>
-
-<!------ testimonials ------>
-
-<section class="testimonials">
-  <h1>What our Students Says</h1>
-  <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.</p>
-  <div class="row">
-    <div class="testimonial-col">
-      <img src="images/karla.jpg">
-      <div>
-        <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.</p>
-        <h3>Karla Lesage</h3>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb
+        hidbiu vbiu dbdjvbhxhjlbddsib biufb.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
       </div>
-    </div>
-    <div class="testimonial-col">
-      <img src="images/dan.jpg">
-      <div>
-        <p>UUUUUUUU how would that movie be.</p>
-        <h3>Daniel Lesage</h3>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!------ Call to Action-->
-
-<section class="cta">
-  <h1>Enroll for our various online courses</br>Anywhere from the world</h1>
-  <a href="" class="hero-btn">CONTACT US</a>
-</section>
-
-<!------ Footer ----->
-
-<section class="footer">
-  <h4>About Us</h4>
-  <p>bdsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbd dsib biufb aiub fibhvb hidbiu vbiu dbdjvbhxhjlbddsib biufb.</p>
-  <div class="icons">
-    <i class="fa fa-facebook"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-instagram"></i>
-    <i class="fa fa-linkedin"></i>
-  </div>
-  <p>Made with <i class="fa fa-heart-o"></i> by Oscarsam</p>
-</section>
-
-
-</body>
+      <p>Made with <i class="fa fa-heart-o"></i> by Oscarsam</p>
+    </section>
+  </body>
 </html>
