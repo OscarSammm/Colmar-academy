@@ -13,6 +13,22 @@
       src="https://kit.fontawesome.com/e215c300a0.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        //run when the DOM is ready
+        $("#closebutton").click(function () {
+          console.log("close");
+          $(".nav-links").removeClass("active"); //add the class to the clicked element
+          $("#openbutton").removeClass("hidden");
+        });
+
+        $("#openbutton").click(function () {
+          console.log("open");
+          $(".nav-links").addClass("active"); //add the class to the clicked element
+          $("#openbutton").addClass("hidden");
+        });
+      });
+    </script>
   </head>
   <body>
     <section class="sub-header">
