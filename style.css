@@ -352,7 +352,7 @@ p {
     url(images/banner2.jpg);
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
   padding: 100px 0;
 }
@@ -499,5 +499,11 @@ nav img {
     float: right;
     padding-top: 15px;
     padding-right: 15px;
+  }
+  .red-btn {
+    border: 1px solid #f44;
+    background: transparent;
+    color: #f44336;
+    margin-left: 14em;
   }
 }
