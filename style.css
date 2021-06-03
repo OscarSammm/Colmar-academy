@@ -439,6 +439,7 @@ p {
   border: 1px solid #f44;
   background: transparent;
   color: #f44336;
+  margin-left: 22em;
 }
 
 .red-btn:hover {
